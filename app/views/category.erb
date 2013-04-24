@@ -1,0 +1,9 @@
+<div class="container">
+  <a href='/'>Homepage</a>
+  <h1>Welcome to <%= @category.name %></h1>
+  <h2>Checkout the posts in this category:</h2>
+  <% @category.posts.each do |post| %>
+    <a href= 'post/<%= post.id %>'><%= post.title %></a>
+    <br>
+  <% end %>
+</div>

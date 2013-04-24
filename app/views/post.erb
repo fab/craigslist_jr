@@ -1,0 +1,11 @@
+<div class="container">
+  <a href='/'>Homepage</a>
+  <br>
+  <br>
+  <a href='/<%= @post.category.name %>'>Return to the <%= @post.category.name %> category</a>
+  <h1><%= @post.title %></h1>
+  <p><b>Description:</b> <%= @post.description %></p>
+  <p><b>Price:</b> $<%= @post.price %>.00</p>
+  <p><b>Email:</b> <%= @post.email %></p>
+  <b><a href='/update/<%= @post.secret_key%>'>Update url</a></b>
+</div>

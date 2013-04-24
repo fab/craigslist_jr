@@ -1,0 +1,35 @@
+<div class="container">
+  <a href='/'>Homepage</a>
+  <form action="/create" method="post">
+    <h1>Create a new post:</h1>
+    <div>
+      <span>Category: </span>
+      <select name="category_id">
+        <% @categories.each do |cat| %>
+          <option value= '<%= cat.id %>'><%= cat.name %></option>
+        <% end %>
+      </select>
+      <br>
+      <br>
+      <label>
+        <span>Title: </span><input id="title" type="text" name="title" />
+      </label>
+      <br>
+      <br>
+      <label>
+        <span>Description: </span><textarea id="description" name="description"></textarea>
+      </label>
+      <br>
+      <br>
+      <label>
+        <span>Price: </span><input id="price" type="number" name="price" />
+      </label>
+      <br>
+      <br>
+      <label>
+        <span>Email Address: </span><input id="email" type="text" name="email" />
+        <input type="submit" value="Submit Post" />
+      </label>
+    </div>
+  </form>
+</div>

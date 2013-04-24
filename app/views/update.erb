@@ -1,0 +1,35 @@
+<div class="container">
+  <a href='/'>Homepage</a>
+  <form action="/update/<%= @secret_key %>" method="post">
+    <h1>Update your post:</h1>
+    <div>
+      <span>Category: </span>
+      <select name="category_id">
+        <% @categories.each do |cat| %>
+          <option value= '<%= cat.id %>'><%= cat.name %></option>
+        <% end %>
+      </select>
+      <br>
+      <br>
+      <label>
+        <span>Title: </span><input id="title" type="text" name="title" />
+      </label>
+      <br>
+      <br>
+      <label>
+        <span>Description: </span><textarea id="description" name="description"></textarea>
+      </label>
+      <br>
+      <br>
+      <label>
+        <span>Price: </span><input id="price" type="number" name="price" />
+      </label>
+      <br>
+      <br>
+      <label>
+        <span>Email Address: </span><input id="email" type="text" name="email" />
+        <input type="submit" value="Update Post" />
+      </label>
+    </div>
+  </form>
+</div>

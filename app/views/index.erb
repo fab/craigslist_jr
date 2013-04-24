@@ -1,0 +1,9 @@
+<div class="container">
+  <a href='/create'>Create a new post</a>
+  <h1>Welcome to Craigslist Jr!</h1>
+  <h2>Checkout our categories:</h2>
+  <% @categories.each do |cat| %>
+    <a href= '<%= cat.name %>'><%= cat.name %></a>
+    <br>
+  <% end %>
+</div>
