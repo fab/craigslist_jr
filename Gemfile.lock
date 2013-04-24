@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     activemodel (3.2.12)
       activesupport (= 3.2.12)
@@ -16,7 +16,6 @@ GEM
     backports (2.6.1)
     builder (3.0.4)
     daemons (1.1.9)
-    diff-lcs (1.1.3)
     eventmachine (1.0.0)
       i18n (~> 0.5)
     i18n (0.6.1)
@@ -54,10 +53,8 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   activesupport
-  faker
   pg
   rake
-  rspec
   shotgun
   sinatra
   sinatra-contrib

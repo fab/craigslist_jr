@@ -1,7 +1,7 @@
 source :rubygems
 
 # PostgreSQL driver
-gem 'pg'
+gem 'pg',
 
 # Sinatra driver
 gem 'sinatra'
@@ -16,8 +16,3 @@ gem 'activerecord'
 gem 'rake'
 
 gem 'shotgun'
-
-# group :test do
-#   gem 'faker'
-#   gem 'rspec'
-# end
