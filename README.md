@@ -1,4 +1,4 @@
-Craigslist Junior: A Craigslist clone 
+Craigslist Jr: A Craigslist clone 
 =============
 Created by Fab Mackojc and Robert Kim
 
